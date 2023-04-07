@@ -17,7 +17,7 @@ This is actually a 'static str.  So its a slice with a static lifetime.
 ## So how to share strings
 
 You will have to look at the code, in particular the map_of_strings_reused which shows how Rc or Arc are
-just brilliant.  Or maybe even Cow for a cache which periodically changes.
+just brilliant.
 
 ## The output
 
