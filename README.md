@@ -30,7 +30,7 @@ This clones the strings : Fred is 42 years old.
 }
 Type of v1 is rusty_strings::string_examples::struct_strings::StructStrings
 alloc::string::String
-The name is at 0x8aec13f270 with len 4, cap 4
+The name is at 0x390ddec30 with len 4, cap 4
 ====== A struct holding an &str
 [src\main.rs:27] &v2 = SliceStrings {
     name: "Fred",
@@ -38,17 +38,17 @@ The name is at 0x8aec13f270 with len 4, cap 4
 }
 Type of v2 is rusty_strings::string_examples::slice_strings::SliceStrings
 &str
-The struct   name is at 0x8aec13f4d8 with len 4
-The variable name is at 0x8aec13f4c0 with len 4
-The struct   name string is at 0x1e1f32166c0,
-The variable name string is at 0x1e1f32166c0
+The struct   name is at 0x390ddee98 with len 4
+The variable name is at 0x390ddee80 with len 4
+The struct   name string is at 0x13815026290,
+The variable name string is at 0x13815026290
 ====== Using an Rc (or Arc, etc) to not copy the string over and over.
-The original string is at 0x1e1f32166c0
+The original string is at 0x13815026290
 
-The cached string is at 0x8aec13fa50
-The o1.name string is at 0x8aec13f9a8,
-The o2.name string is at 0x8aec13f9b8,
-The variable o1.name string is at 0x1e1f32166c0
-The variable o2.name string is at 0x1e1f32166c0
+The cached  Rc<String> is at 0x390ddf410
+The o1.name Rc<String> is at 0x390ddf368,
+The o2.name Rc<String> is at 0x390ddf378,
+The variable o1.name string is at 0x13815026290
+The variable o2.name string is at 0x13815026290
 ```
 
